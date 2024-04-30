@@ -72,6 +72,7 @@ create table Inventory
 ```
 1.3. Create an ERD (Entity Relationship Diagram) for the database.
 
+![WhatsApp Image 2024-04-30 at 18 47 45](https://github.com/Divya1Metta/HexaAssignments/assets/147889571/8bed4afa-9edb-40e0-aac1-b30dcdaafa27)
 
 
 1.4.Create appropriate Primary Key and Foreign Key constraints for referential integrity.
@@ -126,6 +127,7 @@ create table inventory
 (
   InventoryID int Primary Key,
   ProductID int,
+  QuantityInStock int,
   LastStockUpdate varchar(30),
   foreign key(productid) references products(productid)
 );
